@@ -1,0 +1,49 @@
+﻿<Page x:Class="AllTrans.View.SearchTypePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AllTrans.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="900"
+      Title="SearchTypePage">
+
+    <Grid Grid.Row="1" Background="#F9F4F4">
+        <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" ></ColumnDefinition>
+                <ColumnDefinition Width="4"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+         </Grid.ColumnDefinitions>
+        <Grid x:Name="TransSearch" Grid.Column="0" MouseDown="TransSearchClick" Cursor="Hand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.1*"></RowDefinition>
+                <RowDefinition Height="0.9*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="2">
+                <TextBlock x:Name="TransText" Text="По номеру" Style="{DynamicResource NavigationText}" MouseEnter="TransSearchHover" MouseLeave="TransSearchLeft"></TextBlock>
+                <TextBlock Text =" "/>
+                <TextBlock Text =" "/>
+                <Image Source="/Images/Logo.png" Width="180"></Image>
+            </StackPanel>
+        </Grid>
+
+        <Rectangle Fill="Black" Grid.Column="1"></Rectangle>
+
+        <Grid x:Name="StopsSearch" Grid.Column="2" MouseDown="StopsSearchClick" Cursor="Hand" MouseEnter="StopsSearchHover" MouseLeave="StopsSearchLeft">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.1*"></RowDefinition>
+                <RowDefinition Height="0.9*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="2">
+                <TextBlock x:Name="StopsText" Text="По остановке" Style="{DynamicResource NavigationText}">
+                    
+                </TextBlock>
+                <TextBlock Text =" "/>
+                <TextBlock Text =" "/>
+                <Image Source="/Images/Stop.png" Width="360"></Image>
+            </StackPanel>
+        </Grid>
+
+
+    </Grid>
+</Page>

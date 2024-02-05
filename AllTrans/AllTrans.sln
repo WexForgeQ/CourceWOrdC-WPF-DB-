@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32901.82
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllTrans", "AllTrans.csproj", "{09CBBF6C-4606-4AC5-AE7E-8F31E7CC9159}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09CBBF6C-4606-4AC5-AE7E-8F31E7CC9159}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09CBBF6C-4606-4AC5-AE7E-8F31E7CC9159}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09CBBF6C-4606-4AC5-AE7E-8F31E7CC9159}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09CBBF6C-4606-4AC5-AE7E-8F31E7CC9159}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A7528733-CBDA-49E7-AF42-6BDC465C26CA}
+	EndGlobalSection
+EndGlobal

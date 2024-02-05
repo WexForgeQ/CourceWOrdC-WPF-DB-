@@ -1,0 +1,150 @@
+﻿<Page x:Class="AllTrans.View.RoutePickPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AllTrans.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="RoutePickPage">
+    <Grid Grid.Row="1" Background="#F9F4F4">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.3*" ></ColumnDefinition>
+            <ColumnDefinition Width="4"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid x:Name="TransSearch" Grid.Column="0">
+            <Image Source="/Images/Logo.png" Width="180"></Image>
+        </Grid>
+
+        <Rectangle Fill="Black" Grid.Column="1"></Rectangle>
+
+        <Grid Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Text="Выберите маршрута и остановку" Style="{DynamicResource NavigationText}"></TextBlock>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0" Text="Маршрут" Style="{DynamicResource NavigationText}" FontSize="15"></TextBlock>
+                    <ComboBox Width="280" x:Name="RouteList" Grid.Row="1" ItemsSource="{Binding TransRoutes}" SelectionChanged="RouteSelectEvent">
+                        <ComboBox.ItemContainerStyle>
+                            <Style TargetType="ComboBoxItem">
+                                <Setter Property="Background" Value="#F9F4F4"/>
+                                <Setter Property="FontSize" Value="30"/>
+                                <Setter Property="FontFamily" Value="Corbel"></Setter>
+                            </Style>
+                        </ComboBox.ItemContainerStyle>
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding name}" Style="{DynamicResource NavigationText}" FontSize="10"></TextBlock>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0" Text="Остановки" Style="{DynamicResource NavigationText}" FontSize="15"></TextBlock>
+                    <ComboBox Width="280" x:Name="StopsList" Grid.Row="1" ItemsSource="{Binding Stops}" SelectionChanged="StopPickEvent">
+                        <ComboBox.ItemContainerStyle>
+                            <Style TargetType="ComboBoxItem">
+                                <Setter Property="Background" Value="#F9F4F4"/>
+                                <Setter Property="FontSize" Value="30"/>
+                                <Setter Property="FontFamily" Value="Corbel"></Setter>
+                            </Style>
+                        </ComboBox.ItemContainerStyle>
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding name}" Style="{DynamicResource NavigationText}" FontSize="10"></TextBlock>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+                </Grid>
+            </Grid>
+            <Grid x:Name="InfoGrid" Grid.Row="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="0"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid x:Name="ContentNumberGrid" Grid.Row="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="0"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0">
+                            <TextBlock x:Name="RealDate" Style="{DynamicResource NavigationText}" FontSize="20"></TextBlock>
+                        </Grid>
+                        <Grid Grid.Row="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" x:Name="Prev" Style="{DynamicResource NavigationText}" FontSize="30"></TextBlock>
+                            <TextBlock Grid.Column="1" x:Name="Close" Style="{DynamicResource NavigationText}" FontSize="30"></TextBlock>
+                            <TextBlock Grid.Column="2" x:Name="Far" Style="{DynamicResource NavigationText}" FontSize="30"></TextBlock>
+                        </Grid>
+                    </Grid>
+                    <Grid Grid.Row="1">
+                        <ListView x:Name="TimeList" ItemsSource="{Binding Time}" ItemContainerStyle="{DynamicResource ListViewItemStyle}">
+                            <ListView.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <WrapPanel Orientation="Horizontal" IsItemsHost="True" MinWidth="400" MaxWidth="900" />
+                                </ItemsPanelTemplate>
+                            </ListView.ItemsPanel>
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <StackPanel Orientation="Vertical">
+                                        <TextBlock Text="{Binding timeval}"/>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </Grid>
+                    <Grid Grid.Row="2">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="50"></RowDefinition>
+                            <RowDefinition Height="50"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Button x:Name="FavoritesButton" Grid.Row="0" Width="300" Height="30" Style="{DynamicResource RoundButton}" Click="FavoritesButton_Click">
+                            <Button.Content>
+                                <TextBlock  x:Name="FavoritesButtonText" Text="Добавить маршрут в избранное" Style="{DynamicResource NavigationText}" FontSize="15"></TextBlock>
+                            </Button.Content>
+                        </Button>
+                        <Button x:Name="FullViewButton" Grid.Row="1" Width="300" Height="30" Style="{DynamicResource RoundButton}" Click="FullViewClick" Margin="156,5,156,15">
+                            <Button.Content>
+                                <TextBlock x:Name="FullViewButtonText" Text="Просмотреть полное расписание" Style="{DynamicResource NavigationText}" FontSize="15"></TextBlock>
+                            </Button.Content>
+                        </Button>
+                        <Button x:Name="AdminButton" Grid.Row="0" Width="300" Height="30"  Style="{DynamicResource RoundButton}" Click="AdminClick">
+                            <Button.Content>
+                                <TextBlock x:Name="AdminText" Text="Изменить выбранное время" Style="{DynamicResource NavigationText}" FontSize="15"></TextBlock>
+                            </Button.Content>
+                        </Button>
+
+                    </Grid> 
+                </Grid>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>

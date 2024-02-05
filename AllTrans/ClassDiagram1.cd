@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AllTrans.Migrations.Initial" Collapsed="true">
+    <Position X="7.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAI=</HashCode>
+      <FileName>Migrations\20230520104140_Initial.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AllTrans.Migrations.ApplicationContextModelSnapshot" Collapsed="true">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Migrations\ApplicationContextModelSnapshot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AllTrans.Model.ApplicationContext" Collapsed="true">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAABACAAAQAAAEAAAgAAAAQAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Model\ApplicationContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AllTrans.Model.AppSettings" Collapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAEAAAAAAAAAAAQAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\AppSettings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AllTrans.Model.Command" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEACAAQAAECAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Command.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AllTrans.Model.Data" Collapsed="true">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAIAAQAAAAAAEwIAAAAAAAAAAAAAAAAAAAAAAAAAgI=</HashCode>
+      <FileName>Model\Data.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AllTrans.Model.DataWorker" Collapsed="true">
+    <Position X="0.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CBAAIQAgAQAEQEQAAAAAAAACAAASAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Model\DataWorker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AllTrans.Model.FavoriteFull" Collapsed="true">
+    <Position X="2.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Model\FavoriteFull.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AllTrans.Model.FavoriteTransport" Collapsed="true">
+    <Position X="6" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAACAAAAAAAAAAAAAAAgAAAAAAAAAAQAAAAgA=</HashCode>
+      <FileName>Model\FavoriteTransport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AllTrans.Model.Stop" Collapsed="true">
+    <Position X="2.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Model\Stop.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AllTrans.Model.StopRoute" Collapsed="true">
+    <Position X="4.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAQAAAAgA=</HashCode>
+      <FileName>Model\StopRoute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AllTrans.Model.StopTime" Collapsed="true">
+    <Position X="7.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAIAAAAAAAAAAAAAAAAAAgAAAgA=</HashCode>
+      <FileName>Model\StopTime.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AllTrans.Model.Transport" Collapsed="true">
+    <Position X="0.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAQAAAAAAAAAAAEAAAAAAAAAAgA=</HashCode>
+      <FileName>Model\Transport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AllTrans.Model.TransRoute" Collapsed="true">
+    <Position X="2.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAgAEAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Model\TransRoute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AllTrans.Model.User" Collapsed="true">
+    <Position X="4.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAgAAwAAAAAAAAAAAAAAAAAAAAAQgA=</HashCode>
+      <FileName>Model\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AllTrans.View.FavoritesPage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\FavoritesPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AllTrans.View.LogIn" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\LogIn.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AllTrans.View.LogInPage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAACAAAAAAAAAAAAAAAACAAAAAAEAA=</HashCode>
+      <FileName>View\LogInPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AllTrans.View.MainPage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAACAAAAgAAAgAAAAEAA=</HashCode>
+      <FileName>View\MainPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AllTrans.View.MainWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABQAAAAAQEAAAAQAAAAAAAAAAAAAEAAAAAAAAQAAAA=</HashCode>
+      <FileName>View\MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AllTrans.View.NumberPick" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\NumberPick.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AllTrans.View.RegisterPage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAIAAAAgACAAAAAIAAAEAAAAAAAAAEAA=</HashCode>
+      <FileName>View\RegisterPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AllTrans.View.RoutePickPage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAABAAAAAJAAACBAAQAAIAAABAhAIAAAAQAAAAABAgA=</HashCode>
+      <FileName>View\RoutePickPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AllTrans.View.SearchTypePage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAABAAAAAAAAAAIAAAEAAAAAAKAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\SearchTypePage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AllTrans.View.StopsPickPage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAACAAQAAAAAA=</HashCode>
+      <FileName>View\StopsPickPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AllTrans.View.TimeChangeWin" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\TimeChangeWin.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AllTrans.ViewModel.DataManagerFavorites" Collapsed="true">
+    <Position X="0.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAAACCIAAAACAAAAAAAA=</HashCode>
+      <FileName>ViewModel\DataManagerFavorites.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AllTrans.ViewModel.DataManagerLogIn" Collapsed="true">
+    <Position X="2.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIEAAAAAAAAAAAAAAAAACAAAAAAACAAAA=</HashCode>
+      <FileName>ViewModel\DataManagerLogIn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AllTrans.ViewModel.DataManagerNumberPick" Collapsed="true">
+    <Position X="4.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAgAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\DataManagerNumberPick.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AllTrans.ViewModel.DataManagerRouteByNumber" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAJAAAAABAiAIAAgAAAAAAAggAAgAAAQAAAAIEAgQA=</HashCode>
+      <FileName>ViewModel\DataManagerRouteByNumber.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AllTrans.ViewModel.DataManagerRoutePick" Collapsed="true">
+    <Position X="7.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\DataManagerRoutePick.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AllTrans.ViewModel.DataManagerStopsPick" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAJAAAAAAACAIAAAAAAAAAAggAAgAAAQAEAAIEAAEA=</HashCode>
+      <FileName>ViewModel\DataManagerStopsPick.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="AllTrans.App" Collapsed="true">
+    <Position X="0.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
